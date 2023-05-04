@@ -8,8 +8,20 @@ const fetchTeams = createAsyncThunk(
     try {
       const resp = await fetch(baseUrl);
       const data = await resp.json();
-      console.log(data);
-      return data;
+      const teams = data.map((t) => (
+        {
+          teamId: t.team_id,
+          teamName: t.name,
+          logo: t.logo_url,
+          rating: t.rating,
+          tag: t.tag,
+          wins: t.wins,
+          losses: t.losses,
+          winrate: `${((t.wins / (t.wins + t.losses)) * 100).toFixed(2)}%`,
+          filtered: true,
+        }
+      ));
+      return teams;
     } catch (error) {
       return thunkAPI.rejectWithValue(error);
     }
@@ -17,12 +29,11 @@ const fetchTeams = createAsyncThunk(
 );
 
 const getTeamDetails = createAsyncThunk(
-  'teams/fetchTeams',
+  'teams/getTeamDetails',
   async (id, thunkAPI) => {
     try {
       const resp = await fetch(`${baseUrl}/${id}`);
       const data = await resp.json();
-      console.log(data);
       return data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error);
