@@ -1,6 +1,8 @@
+import TeamsList from '../components/TeamsList';
+
 const Home = () => (
   <>
-    Home
+    <TeamsList />
   </>
 );
 

@@ -1,0 +1,54 @@
+.f {
+  display: flex;
+}
+
+.c {
+  flex-direction: column;
+}
+
+.nav-bar {
+  justify-content: space-between;
+}
+
+.nav-Header {
+  align-self: flex-start;
+}
+
+.searchBox {
+  align-self: center;
+}
+
+.teamsWrapper {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team {
+  width: 15rem;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 1rem;
+  flex-grow: 1;
+}
+
+.teamContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.team svg {
+  align-self: flex-end;
+  font-size: 1rem;
+}
+
+.teamInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.teamLogo {
+  width: 5rem;
+  height: 5rem;
+}
