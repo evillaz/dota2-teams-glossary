@@ -1,5 +1,5 @@
-<div align="center"><h1>Space Hub</h1>
-<img src="https://github.com/evillaz/react-redux-group-project/blob/dev/live%20pic.png">
+<div align="center"><h1>Dota 2 Teams Glossary</h1>
+<img src="https://github.com/evillaz/dota2-teams-glossary/blob/display-details-styling/ScreenShots/teamsglossary.png">
 </div>
 
 
