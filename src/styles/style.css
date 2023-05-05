@@ -53,6 +53,10 @@ table * {
   background-color: #4369b2;
 }
 
+.backSpace {
+  cursor: pointer;
+}
+
 .nav-Header {
   align-self: flex-start;
 }

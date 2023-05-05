@@ -9,6 +9,14 @@ const NavBar = () => {
     dispatch(searchTeam(e.target.value));
   };
 
+  const resetSearch = () => {
+    dispatch(searchTeam(' '));
+    const inputText = document.querySelector('.searchBox');
+    if (inputText) {
+      inputText.value = '';
+    }
+  };
+
   const path = useLocation();
 
   const navBarClasses = 'nav-bar f';
@@ -17,9 +25,13 @@ const NavBar = () => {
   return (
     <nav className={navBarClasses}>
       <NavLink className={navHeaderClasses} to="/home" style={{ color: '#000' }}>
-        <div className="backSpace">
+        <button
+          className="backSpace"
+          type="button"
+          onClick={resetSearch}
+        >
           <HiChevronLeft style={{ fontSize: '2rem' }} />
-        </div>
+        </button>
       </NavLink>
       {!path.pathname.includes('teams') && (
         <>
