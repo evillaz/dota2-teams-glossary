@@ -32,9 +32,14 @@ const getTeamDetails = createAsyncThunk(
   'teams/getTeamDetails',
   async (id, thunkAPI) => {
     try {
-      const resp = await fetch(`${baseUrl}/${id}`);
+      const resp = await fetch(`${baseUrl}${id}/players`);
       const data = await resp.json();
-      return data;
+      const players = data.filter((p) => p.is_current_team_member).map((p) => ({
+        ...p,
+        winrate: `${((p.wins / p.games_played) * 100).toFixed(2)}%`,
+      }));
+
+      return players;
     } catch (error) {
       return thunkAPI.rejectWithValue(error);
     }

@@ -4,6 +4,10 @@ import { fetchTeams, getTeamDetails } from './teamsThunk';
 const initialState = {
   teams: [],
   isLoading: true,
+  teamDetails: {
+    details: [],
+    isLoading: true,
+  },
 };
 
 const teamSlice = createSlice({
@@ -57,5 +61,5 @@ const teamSlice = createSlice({
   },
 });
 
-export const { searchTeam } = teamSlice.actions;
+export const { searchTeam, getTeam } = teamSlice.actions;
 export default teamSlice.reducer;
