@@ -116,7 +116,7 @@ After you're finished please remove all the comments and instructions!
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- **[Live Demo Video!]()**
+- **[Live Demo Video!](https://www.loom.com/share/399840bc2c3b4ed996a6913a509117e7)**
 - **[Live Demo!](https://dota-2-teams-glossary.onrender.com)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
