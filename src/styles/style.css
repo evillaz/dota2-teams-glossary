@@ -136,6 +136,11 @@ table * {
   font-size: 1rem;
 }
 
+.teamRating,
+.teamWinrate {
+  font-size: 0.5rem;
+}
+
 .teamLogo {
   border-radius: 10px;
   width: 30%;
@@ -151,8 +156,8 @@ table * {
 }
 
 .detailsWrapper {
-  align-self: flex-start;
-  padding: 20% 10%;
+  align-self: center;
+  justify-content: center;
 }
 
 .detailsHeader {
@@ -174,8 +179,14 @@ table * {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.detailsTableHeader {
+.detailsTableHeader,
+.teamPlayers {
   font-family: 'Lato', sans-serif;
+}
+
+.teamPlayers {
+  font-size: 0.6rem;
+  font-weight: lighter;
 }
 
 .detailsTableHeader > tr:nth-child(even) {
@@ -199,4 +210,22 @@ table * {
 
 .teamsLoading {
   padding: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 30px;
+  }
 }
