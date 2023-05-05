@@ -234,6 +234,8 @@ If you like this project  don't doubt on make any comments or try to reach me ou
 
 I would like to thank microverse for the opportunity on working each other as colleagues and the learning opportunities it brings us.
 
+I will also like to give credit for the [Benance Guidelines](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)), that i used for the styling of the project, to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio).
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FAQ (optional) -->
