@@ -1,6 +1,5 @@
-import { render, screen, fireEvent } from '@testing-library/react';
-import { MemoryRouter, Router } from 'react-router-dom';
-import { createMemoryHistory } from 'history';
+import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from '../redux/store';
 import NavBar from '../components/layout/NavBar';

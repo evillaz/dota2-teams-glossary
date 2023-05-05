@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
-import { getTeamDetails } from '../redux/teams/teamsThunk';
+import { getTeamDetails } from '../redux/teams/teamSlice';
 
 const TeamDetailsView = () => {
   const path = useLocation();

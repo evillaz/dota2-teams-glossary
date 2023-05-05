@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Layout from './components/layout/Layout';
 import Home from './routes/Home';
 import TeamDetails from './routes/TeamDetails';
-import { fetchTeams } from './redux/teams/teamsThunk';
+import { fetchTeams } from './redux/teams/teamSlice';
 import './styles/style.css';
 
 function App() {
