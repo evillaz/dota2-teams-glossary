@@ -94,30 +94,30 @@ After you're finished please remove all the comments and instructions!
 - **[Create a directory for your reusable components: /components.]**
 - **[Use React Router.]**
 - **[Create routes and view components: Home, Team Details.]**
-- **[Home page
+- **[Home page]**
   - When the page loads, the webapp shows the list of categories that could be filtered out by some parameter, for example by the category name.
   - Along with the category name, you will display some numeric values per category that come from the API.
-  - When the user clicks (or taps) on a category item, the application navigates to the details page.]**
+  - When the user clicks (or taps) on a category item, the application navigates to the details page.
 - **[Add reducers and actions]**
 - **[Use Redux in React components]**
-- **[Details page
+- **[Details page]**
   - In the details page, the webapp retrieves data from the API to show detailed data in the category.
-  - When the user clicks on the "Back" button (<), the user navigates to the home page.]**
-- **[Testing
+  - When the user clicks on the "Back" button (<), the user navigates to the home page.
+- **[Testing]**
   - Created unit tests for pure functions in your Redux code.
-  - Created integration tests for your application using the React Testing Library.]**
-- **[Technical set up**
+  - Created integration tests for your application using the React Testing Library.
+- **[Technical set up]**
   - Set up the repository on GitHub and use Gitflow.
   - Set up React and Redux.
-  - Set up testing libraries(React Testing Library and Jest).]**
+  - Set up testing libraries(React Testing Library and Jest).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-- **[Live Demo!](https://space-travelers-hub-2zo8.onrender.com/)**
+- **[Live Demo Video!]()**
+- **[Live Demo!](https://dota-2-teams-glossary.onrender.com)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
