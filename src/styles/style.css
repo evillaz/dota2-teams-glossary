@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+
+* {
+  list-style-type: none;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+}
+
 .f {
   display: flex;
 }
@@ -6,8 +25,32 @@
   flex-direction: column;
 }
 
+.li {
+  cursor: pointer;
+}
+
+.button {
+  border: none;
+}
+
+.wrapper {
+  justify-content: center;
+  background-color: #5688e4;
+  height: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+table * {
+  text-align: center;
+}
+
 .nav-bar {
   justify-content: space-between;
+  padding: 1rem;
+  background-color: #4369b2;
 }
 
 .nav-Header {
@@ -16,24 +59,52 @@
 
 .searchBox {
   align-self: center;
+  font-family: 'Lato', sans-serif;
+  background-color: #fff;
+  padding: 0.25rem;
+  border-radius: 5px;
+  color: #000;
+  width: 40%;
+}
+
+.searchBox::placeholder {
+  font-family: 'Lato', sans-serif;
+  font-weight: 50;
+  color: lightgray;
 }
 
 .teamsWrapper {
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: flex-start;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  align-items: stretch;
+}
+
+.teamItem {
+  flex-basis: 50%;
+  min-height: max-content;
+  flex-grow: 1;
+  background-color: #5688e4;
+  border: none;
+  max-width: 50%;
 }
 
 .team {
   width: 15rem;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 10% 10%;
   gap: 1rem;
   flex-grow: 1;
 }
 
 .teamContainer {
-  display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 10%;
   width: 100%;
 }
 
@@ -43,12 +114,118 @@
 }
 
 .teamInfo {
-  display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: 50%;
+}
+
+.teamInfo * {
+  white-space: nowrap;
+}
+
+.teamTag,
+.teamName,
+.teamRating,
+.teamWinrate {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+}
+
+.teamTag,
+.teamName {
+  font-size: 1rem;
+}
+
+.teamRating,
+.teamWinrate {
+  font-size: 0.5rem;
 }
 
 .teamLogo {
-  width: 5rem;
+  border-radius: 10px;
+  width: 30%;
   height: 5rem;
+}
+
+.teamItem:nth-child(4n - 1) {
+  background-color: #3e61a4;
+}
+
+.teamItem:nth-child(4n - 2) {
+  background-color: #3e61a4;
+}
+
+.detailsWrapper {
+  align-self: center;
+  justify-content: center;
+}
+
+.detailsHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.teamDetailsLogo {
+  width: 20%;
+}
+
+.detailsTitle {
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.detailsHeader * {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.detailsTableHeader,
+.teamPlayers {
+  font-family: 'Lato', sans-serif;
+}
+
+.teamPlayers {
+  font-size: 0.6rem;
+  font-weight: lighter;
+}
+
+.detailsTableHeader > tr:nth-child(even) {
+  background-color: #3e61a4;
+}
+
+.detailsTableHeader > tr:nth-child(odd) {
+  background-color: #1a3363;
+}
+
+.teamPlayers > tr:nth-child(even) {
+  background-color: #3e61a4;
+}
+
+.detailsLoading,
+.teamsLoading {
+  align-self: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+}
+
+.teamsLoading {
+  padding: 3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 30px;
+  }
 }

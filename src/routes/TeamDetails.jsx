@@ -1,6 +1,8 @@
+import TeamDetailsView from '../components/TeamDetailsView';
+
 const TeamDetails = () => (
   <>
-    TeamDetails
+    <TeamDetailsView />
   </>
 );
 

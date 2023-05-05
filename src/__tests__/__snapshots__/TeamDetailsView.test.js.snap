@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TeamDetailsView component should render correctly 1`] = `
+<div>
+  <div
+    class="detailsWrapper"
+  >
+    <span
+      class="detailsLoading"
+    >
+      Loading...
+    </span>
+  </div>
+</div>
+`;

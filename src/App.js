@@ -1,17 +1,21 @@
 import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Layout from './components/layout/Layout';
 import Home from './routes/Home';
 import TeamDetails from './routes/TeamDetails';
-import { fetchTeams } from './redux/teams/teamsThunk';
+import { fetchTeams } from './redux/teams/teamSlice';
 import './styles/style.css';
 
 function App() {
   const dispatch = useDispatch();
+  const { fulfilled } = useSelector((store) => store.teams);
+
   useEffect(() => {
-    dispatch(fetchTeams());
-  }, [dispatch]);
+    if (!fulfilled) {
+      dispatch(fetchTeams());
+    }
+  }, [dispatch, fulfilled]);
 
   return (
     <>
